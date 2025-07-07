@@ -1,0 +1,27 @@
+name = "portfolio-contact-form"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Email routing binding for sending emails
+[[send_email]]
+name = "SEND_EMAIL"
+destination_address = "sbelgana@gmail.com"
+
+# Environment variables
+[vars]
+SENDER_EMAIL = "hello@soufianebelgana.me"
+RECIPIENT_EMAIL = "sbelgana@gmail.com"
+
+# For production deployment, you can set different values
+[env.production]
+name = "portfolio-contact-form-prod"
+
+[env.production.vars]
+SENDER_EMAIL = "hello@soufianebelgana.me"
+RECIPIENT_EMAIL = "sbelgana@gmail.com"
+
+[[env.production.send_email]]
+name = "SEND_EMAIL"
+destination_address = "sbelgana@gmail.com"
+

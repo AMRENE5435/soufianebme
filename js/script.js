@@ -246,13 +246,12 @@ function initScrollToTop() {
         });
     }
 }
-
 // Contact Form
 function initContactForm() {
     const contactForm = document.getElementById('contact-form');
     
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             // Get form data
@@ -273,20 +272,70 @@ function initContactForm() {
                 return;
             }
             
-            // Simulate form submission
+            // Get submit button and show loading state
             const submitButton = this.querySelector('.submit-button');
             const originalText = submitButton.textContent;
             
             submitButton.textContent = 'Sending...';
             submitButton.disabled = true;
+            submitButton.style.opacity = '0.7';
             
-            // Simulate API call
-            setTimeout(() => {
-                showNotification('Message sent successfully! I will get back to you soon.', 'success');
-                contactForm.reset();
+            try {
+                // Submit to Cloudflare Worker
+                const workerUrl = window.PORTFOLIO_CONFIG?.WORKER_URL || 'https://portfolio-contact-form.your-subdomain.workers.dev';
+                const timeout = window.PORTFOLIO_CONFIG?.FORM_TIMEOUT || 10000;
+                
+                // Create a timeout promise
+                const timeoutPromise = new Promise((_, reject) => {
+                    setTimeout(() => reject(new Error('Request timeout')), timeout);
+                });
+                
+                // Race between fetch and timeout
+                const response = await Promise.race([
+                    fetch(workerUrl, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            // Don't set Content-Type for FormData, let browser set it
+                        }
+                    }),
+                    timeoutPromise
+                ]);
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showNotification(result.message || 'Message sent successfully! I will get back to you soon.', 'success');
+                    contactForm.reset();
+                } else {
+                    showNotification(result.error || 'Failed to send message. Please try again.', 'error');
+                }
+                
+            } catch (error) {
+                console.error('Form submission error:', error);
+                
+                const contactEmail = window.PORTFOLIO_CONFIG?.CONTACT_EMAIL || 'sbelgana@gmail.com';
+                
+                // Fallback: Show email link if Worker is not available
+                showNotification(`Unable to send message automatically. Please email me directly at ${contactEmail}`, 'error');
+                
+                // Optional: Open email client as fallback
+                const emailSubject = encodeURIComponent(subject);
+                const emailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+                const emailLink = `mailto:${contactEmail}?subject=${emailSubject}&body=${emailBody}`;
+                
+                // Show option to open email client
+                setTimeout(() => {
+                    if (confirm('Would you like to open your email client to send the message?')) {
+                        window.location.href = emailLink;
+                    }
+                }, 2000);
+            } finally {
+                // Reset button state
                 submitButton.textContent = originalText;
                 submitButton.disabled = false;
-            }, 2000);
+                submitButton.style.opacity = '1';
+            }
         });
     }
 }
@@ -573,4 +622,3 @@ function preloadResources() {
 
 // Initialize preloading
 window.addEventListener('load', preloadResources);
-
