@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://www.soufianebelgana.me/</loc>
-      <lastmod>2025-07-07</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>1.0</priority>
-   </url>
+  <!-- Main pages -->
+  <url>
+    <loc>https://soufianebelgana.me/</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Section pages -->
+  <url>
+    <loc>https://soufianebelgana.me/#home</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://soufianebelgana.me/#about</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soufianebelgana.me/#experience</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soufianebelgana.me/#services</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soufianebelgana.me/#projects</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soufianebelgana.me/#contact</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- External links you're using -->
+  <url>
+    <loc>http://wa.me/16017810046</loc>
+  </url>
+  <url>
+    <loc>callto:+212708040530</loc>
+  </url>
+  <url>
+    <loc>mailto:hello@soufianebelgana.me</loc>
+  </url>
+  <url>
+    <loc>https://maps.app.goo.gl/R2JbxnGuc2s9wifF8</loc>
+  </url>
 </urlset>
-
