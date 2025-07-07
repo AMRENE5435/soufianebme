@@ -314,7 +314,7 @@ function initContactForm() {
             } catch (error) {
                 console.error('Form submission error:', error);
                 
-                const contactEmail = window.PORTFOLIO_CONFIG?.CONTACT_EMAIL || 'sbelgana@gmail.com';
+                const contactEmail = window.PORTFOLIO_CONFIG?.CONTACT_EMAIL || 'helllo@soufianebelgana.me';
                 
                 // Fallback: Show email link if Worker is not available
                 showNotification(`Unable to send message automatically. Please email me directly at ${contactEmail}`, 'error');
