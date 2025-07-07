@@ -652,41 +652,41 @@ window.translations = {
     }
 };
 
-// Language switching functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const languageSelect = document.getElementById('language-select-desktop') || 
-                         document.getElementById('language-select-mobile');
+// // Language switching functionality
+// document.addEventListener('DOMContentLoaded', function() {
+//     const languageSelect = document.getElementById('language-select-desktop') || 
+//                          document.getElementById('language-select-mobile');
     
-    // Set initial language
-    const savedLanguage = localStorage.getItem('language') || 'en';
-    if (languageSelect) {
-        languageSelect.value = savedLanguage;
-    }
-    updatePageLanguage(savedLanguage);
+//     // Set initial language
+//     const savedLanguage = localStorage.getItem('language') || 'en';
+//     if (languageSelect) {
+//         languageSelect.value = savedLanguage;
+//     }
+//     updatePageLanguage(savedLanguage);
 
-    // Handle language change
-    if (languageSelect) {
-        languageSelect.addEventListener('change', function() {
-            const selectedLanguage = this.value;
-            localStorage.setItem('language', selectedLanguage);
-            updatePageLanguage(selectedLanguage);
-        });
-    }
-});
+//     // Handle language change
+//     if (languageSelect) {
+//         languageSelect.addEventListener('change', function() {
+//             const selectedLanguage = this.value;
+//             localStorage.setItem('language', selectedLanguage);
+//             updatePageLanguage(selectedLanguage);
+//         });
+//     }
+// });
 
-function updatePageLanguage(language) {
-    // Update all elements with data-translate attribute
-    document.querySelectorAll('[data-translate]').forEach(element => {
-        const key = element.getAttribute('data-translate');
-        if (translations[language] && translations[language][key]) {
-            element.textContent = translations[language][key];
-        }
-    });
+// function updatePageLanguage(language) {
+//     // Update all elements with data-translate attribute
+//     document.querySelectorAll('[data-translate]').forEach(element => {
+//         const key = element.getAttribute('data-translate');
+//         if (translations[language] && translations[language][key]) {
+//             element.textContent = translations[language][key];
+//         }
+//     });
 
-    // Update page direction for RTL languages
-    if (language === 'ar') {
-        document.documentElement.dir = 'rtl';
-    } else {
-        document.documentElement.dir = 'ltr';
-    }
-}
+//     // Update page direction for RTL languages
+//     if (language === 'ar') {
+//         document.documentElement.dir = 'rtl';
+//     } else {
+//         document.documentElement.dir = 'ltr';
+//     }
+// }
