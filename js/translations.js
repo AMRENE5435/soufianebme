@@ -2,13 +2,40 @@
 window.translations = {
     en: {
         // Navigation
-        'nav-logo': 'SB',
-        'nav-home': 'Home',
-        'nav-about': 'About',
-        'nav-experience': 'Experience',
-        'nav-services': 'Services',
-        'nav-projects': 'Projects',
-        'nav-contact': 'Contact',
+        "nav-home": "Home",
+        "nav-about": "About",
+        "nav-experience": "Experience",
+        "nav-services": "Services",
+        "nav-projects": "Projects",
+        "nav-contact": "Contact",
+        "nav-privacy": "Privacy",
+        "nav-terms": "Terms",
+        "toggle-theme": "Toggle Theme",
+
+        // Privacy Policy
+        "privacy-title": "Privacy Policy",
+        "privacy-last-updated": "Last updated: July 7, 2025",
+        "privacy-info-collection": "Information Collection",
+        "privacy-info-use": "Use of Information",
+        "privacy-data-sharing": "Data Sharing",
+        "privacy-cookies": "Cookies and Tracking",
+        "privacy-security": "Data Security",
+        "privacy-your-rights": "Your Rights",
+        "privacy-changes": "Policy Changes",
+        "privacy-contact-title": "Contact Us",
+
+        // Terms of Use
+        "terms-title": "Terms of Use",
+        "terms-last-updated": "Last updated: July 7, 2025",
+        "terms-acceptance": "Acceptance of Terms",
+        "terms-use": "Use of Website",
+        "terms-ip": "Intellectual Property",
+        "terms-user-content": "User Content",
+        "terms-warranties": "Disclaimer of Warranties",
+        "terms-liability": "Limitation of Liability",
+        "terms-changes": "Changes to Terms",
+        "terms-law": "Governing Law",
+        "terms-contact-title": "Contact Us",
         
         // Page title
         'page-title': 'Soufiane Belgana - Full-Stack Developer',
@@ -105,13 +132,41 @@ window.translations = {
     
     ar: {
         // Navigation
-        'nav-logo': 'س.ب',
-        'nav-home': 'الرئيسية',
-        'nav-about': 'نبذة عني',
-        'nav-experience': 'الخبرة',
-        'nav-services': 'الخدمات',
-        'nav-projects': 'المشاريع',
-        'nav-contact': 'التواصل',
+        "nav-home": "الرئيسية",
+        "nav-about": "معلومات عني",
+        "nav-experience": "الخبرة",
+        "nav-services": "الخدمات",
+        "nav-projects": "المشاريع",
+        "nav-contact": "اتصل",
+        "nav-privacy": "الخصوصية",
+        "nav-terms": "الشروط",
+        "toggle-theme": "تبديل السمة",
+
+        // Privacy Policy
+        "privacy-title": "سياسة الخصوصية",
+        "privacy-last-updated": "آخر تحديث: 7 يوليو 2025",
+        "privacy-info-collection": "جمع المعلومات",
+        "privacy-info-use": "استخدام المعلومات",
+        "privacy-data-sharing": "مشاركة البيانات",
+        "privacy-cookies": "الكوكيز والتتبع",
+        "privacy-security": "أمان البيانات",
+        "privacy-your-rights": "حقوقك",
+        "privacy-changes": "تغييرات السياسة",
+        "privacy-contact-title": "اتصل بنا",
+
+        // Terms of Use
+        "terms-title": "شروط الاستخدام",
+        "terms-last-updated": "آخر تحديث: 7 يوليو 2025",
+        "terms-acceptance": "القبول للشروط",
+        "terms-use": "استخدام الموقع",
+        "terms-ip": "الملكية الفكرية",
+        "terms-user-content": "محتوى المستخدم",
+        "terms-warranties": "إخلاء المسؤولية من الضمانات",
+        "terms-liability": "تحديد المسؤولية",
+        "terms-changes": "تغييرات الشروط",
+        "terms-law": "القانون الحاكم",
+        "terms-contact-title": "اتصل بنا",
+
         
         // Page title
         'page-title': 'سفيان بلقانة - مطور ويب متكامل',
@@ -208,13 +263,40 @@ window.translations = {
     
     de: {
         // Navigation
-        'nav-logo': 'SB',
-        'nav-home': 'Startseite',
-        'nav-about': 'Über mich',
-        'nav-experience': 'Erfahrung',
-        'nav-services': 'Dienstleistungen',
-        'nav-projects': 'Projekte',
-        'nav-contact': 'Kontakt',
+        "nav-home": "Startseite",
+        "nav-about": "Über mich",
+        "nav-experience": "Erfahrung",
+        "nav-services": "Dienstleistungen",
+        "nav-projects": "Projekte",
+        "nav-contact": "Kontakt",
+        "nav-privacy": "Datenschutz",
+        "nav-terms": "Nutzungsbedingungen",
+        "toggle-theme": "Thema wechseln",
+
+        // Privacy Policy
+        "privacy-title": "Datenschutzrichtlinie",
+        "privacy-last-updated": "Zuletzt aktualisiert: 7. Juli 2025",
+        "privacy-info-collection": "Informationssammlung",
+        "privacy-info-use": "Nutzung der Informationen",
+        "privacy-data-sharing": "Datenaustausch",
+        "privacy-cookies": "Cookies und Tracking",
+        "privacy-security": "Datensicherheit",
+        "privacy-your-rights": "Ihre Rechte",
+        "privacy-changes": "Richtlinienänderungen",
+        "privacy-contact-title": "Kontaktieren Sie uns",
+
+        // Terms of Use
+        "terms-title": "Nutzungsbedingungen",
+        "terms-last-updated": "Zuletzt aktualisiert: 7. Juli 2025",
+        "terms-acceptance": "Annahme der Bedingungen",
+        "terms-use": "Nutzung der Website",
+        "terms-ip": "Geistiges Eigentum",
+        "terms-user-content": "Benutzerinhalte",
+        "terms-warranties": "Haftungsausschluss",
+        "terms-liability": "Haftungsbeschränkung",
+        "terms-changes": "Änderungen der Bedingungen",
+        "terms-law": "Geltendes Recht",
+        "terms-contact-title": "Kontaktieren Sie uns",
         
         // Page title
         'page-title': 'Soufiane Belgana - Full-Stack Entwickler',
@@ -311,13 +393,40 @@ window.translations = {
     
     zh: {
         // Navigation
-        'nav-logo': 'SB',
-        'nav-home': '首页',
-        'nav-about': '关于我',
-        'nav-experience': '经验',
-        'nav-services': '服务',
-        'nav-projects': '项目',
-        'nav-contact': '联系',
+        "nav-home": "首页",
+        "nav-about": "关于",
+        "nav-experience": "经历",
+        "nav-services": "服务",
+        "nav-projects": "项目",
+        "nav-contact": "联系",
+        "nav-privacy": "隐私",
+        "nav-terms": "条款",
+        "toggle-theme": "切换主题",
+
+        // Privacy Policy
+        "privacy-title": "隐私政策",
+        "privacy-last-updated": "最后更新：2025年7月7日",
+        "privacy-info-collection": "信息收集",
+        "privacy-info-use": "信息使用",
+        "privacy-data-sharing": "数据共享",
+        "privacy-cookies": "Cookies和跟踪",
+        "privacy-security": "数据安全",
+        "privacy-your-rights": "您的权利",
+        "privacy-changes": "政策变更",
+        "privacy-contact-title": "联系我们",
+
+        // Terms of Use
+        "terms-title": "使用条款",
+        "terms-last-updated": "最后更新：2025年7月7日",
+        "terms-acceptance": "接受条款",
+        "terms-use": "网站使用",
+        "terms-ip": "知识产权",
+        "terms-user-content": "用户内容",
+        "terms-warranties": "免责声明",
+        "terms-liability": "责任限制",
+        "terms-changes": "条款变更",
+        "terms-law": "适用法律",
+        "terms-contact-title": "联系我们",
         
         // Page title
         'page-title': 'Soufiane Belgana - 全栈开发者',
@@ -414,13 +523,40 @@ window.translations = {
     
     fr: {
         // Navigation
-        'nav-logo': 'SB',
-        'nav-home': 'Accueil',
-        'nav-about': 'À propos',
-        'nav-experience': 'Expérience',
-        'nav-services': 'Services',
-        'nav-projects': 'Projets',
-        'nav-contact': 'Contact',
+        "nav-home": "Accueil",
+        "nav-about": "À propos",
+        "nav-experience": "Expérience",
+        "nav-services": "Services",
+        "nav-projects": "Projets",
+        "nav-contact": "Contact",
+        "nav-privacy": "Confidentialité",
+        "nav-terms": "Conditions",
+        "toggle-theme": "Changer de thème",
+
+        // Privacy Policy
+        "privacy-title": "Politique de confidentialité",
+        "privacy-last-updated": "Dernière mise à jour : 7 juillet 2025",
+        "privacy-info-collection": "Collecte d'informations",
+        "privacy-info-use": "Utilisation des informations",
+        "privacy-data-sharing": "Partage de données",
+        "privacy-cookies": "Cookies et suivi",
+        "privacy-security": "Sécurité des données",
+        "privacy-your-rights": "Vos droits",
+        "privacy-changes": "Modifications de la politique",
+        "privacy-contact-title": "Contactez-nous",
+
+        // Terms of Use
+        "terms-title": "Conditions d'utilisation",
+        "terms-last-updated": "Dernière mise à jour : 7 juillet 2025",
+        "terms-acceptance": "Acceptation des conditions",
+        "terms-use": "Utilisation du site",
+        "terms-ip": "Propriété intellectuelle",
+        "terms-user-content": "Contenu utilisateur",
+        "terms-warranties": "Clause de non-responsabilité",
+        "terms-liability": "Limitation de responsabilité",
+        "terms-changes": "Modifications des conditions",
+        "terms-law": "Droit applicable",
+        "terms-contact-title": "Contactez-nous",
         
         // Page title
         'page-title': 'Soufiane Belgana - Développeur Full-Stack',
@@ -516,3 +652,41 @@ window.translations = {
     }
 };
 
+// Language switching functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const languageSelect = document.getElementById('language-select-desktop') || 
+                         document.getElementById('language-select-mobile');
+    
+    // Set initial language
+    const savedLanguage = localStorage.getItem('language') || 'en';
+    if (languageSelect) {
+        languageSelect.value = savedLanguage;
+    }
+    updatePageLanguage(savedLanguage);
+
+    // Handle language change
+    if (languageSelect) {
+        languageSelect.addEventListener('change', function() {
+            const selectedLanguage = this.value;
+            localStorage.setItem('language', selectedLanguage);
+            updatePageLanguage(selectedLanguage);
+        });
+    }
+});
+
+function updatePageLanguage(language) {
+    // Update all elements with data-translate attribute
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[language] && translations[language][key]) {
+            element.textContent = translations[language][key];
+        }
+    });
+
+    // Update page direction for RTL languages
+    if (language === 'ar') {
+        document.documentElement.dir = 'rtl';
+    } else {
+        document.documentElement.dir = 'ltr';
+    }
+}

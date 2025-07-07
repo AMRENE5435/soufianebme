@@ -2,45 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Privacy Policy | Soufiane Belgana</title>
+    <meta name="description" content="Privacy policy for Soufiane Belgana's website and services. Learn how we collect, use, and protect your data.">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.jpg">
+    
+    <!-- iOS meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="canonical" href="https://www.soufianebelgana.me/privacy">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K7CD69H9');</script>
+    <!-- End Google Tag Manager -->
+    
     <style>
-        :root {
-            --primary: #4361ee;
-            --secondary: #3f37c9;
-            --dark: #1f2937;
-            --light: #f9fafb;
-            --gray: #6b7280;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: var(--light);
-            overflow-x: hidden;
-        }
-        
+        /* Privacy Policy Specific Styles */
         .privacy-container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 4rem 2rem;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.6s ease forwards;
-        }
-        
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            padding: 6rem 2rem 4rem;
         }
         
         .privacy-header {
@@ -52,18 +48,10 @@
             font-size: 2.5rem;
             font-weight: 800;
             margin-bottom: 1rem;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            background: linear-gradient(90deg, #4361ee, #3f37c9);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            display: inline-block;
-        }
-        
-        .privacy-header p {
-            color: var(--gray);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
         }
         
         .policy-section {
@@ -83,7 +71,7 @@
         .policy-section h2 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: var(--primary);
+            color: #4361ee;
             position: relative;
             padding-left: 1.5rem;
         }
@@ -96,53 +84,17 @@
             transform: translateY(-50%);
             width: 8px;
             height: 8px;
-            background: var(--primary);
+            background: #4361ee;
             border-radius: 50%;
         }
         
-        .policy-section p, .policy-section ul {
-            margin-bottom: 1rem;
-            color: var(--dark);
-        }
-        
-        .policy-section ul {
-            padding-left: 1.5rem;
-        }
-        
-        .policy-section li {
-            margin-bottom: 0.5rem;
-            position: relative;
-        }
-        
-        .policy-section li::before {
-            content: '•';
-            color: var(--primary);
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
-        
         .contact-info {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, #4361ee, #3f37c9);
             color: white;
             padding: 2rem;
             border-radius: 12px;
             text-align: center;
             margin-top: 3rem;
-            animation: pulse 6s infinite alternate;
-        }
-        
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.01);
-            }
-            100% {
-                transform: scale(1);
-            }
         }
         
         .contact-info h3 {
@@ -162,43 +114,9 @@
             border-color: white;
         }
         
-        /* Animated background elements */
-        .bg-shape {
-            position: fixed;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: rgba(67, 97, 238, 0.1);
-            z-index: -1;
-        }
-        
-        .shape-1 {
-            top: -50px;
-            left: -50px;
-            animation: float 8s ease-in-out infinite;
-        }
-        
-        .shape-2 {
-            bottom: 100px;
-            right: -50px;
-            width: 300px;
-            height: 300px;
-            animation: float 10s ease-in-out infinite 2s;
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-        
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .privacy-container {
-                padding: 2rem 1rem;
+                padding: 5rem 1rem 2rem;
             }
             
             .policy-section {
@@ -212,17 +130,79 @@
     </style>
 </head>
 <body>
-    <!-- Animated background elements -->
-    <div class="bg-shape shape-1"></div>
-    <div class="bg-shape shape-2"></div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7CD69H9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="nav-logo">
+                    <img src="assets/images/logo.svg" alt="SB Logo" width="40" height="40">
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="privacy.html" class="active">Privacy</a></li>
+                <li class="mobile-only">
+                    <!-- Language Switcher for Mobile -->
+                    <select id="language-select-mobile" aria-label="Select Language" class="mobile-language-select">
+                        <option value="en">English</option>
+                        <option value="ar">العربية</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </li>
+                <li class="mobile-only">
+                    <!-- Theme Toggle for Mobile -->
+                    <button class="theme-toggle mobile-theme-toggle" id="theme-toggle-mobile" aria-label="Toggle dark mode">
+                        <span class="theme-icon">🌙</span> <span>Toggle Theme</span>
+                    </button>
+                </li>
+            </ul>
+            
+            <!-- Desktop controls -->
+            <div class="desktop-controls">
+                <div class="language-switcher">
+                    <select id="language-select-desktop" aria-label="Select Language">
+                        <option value="en">English</option>
+                        <option value="ar">العربية</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </div>
+                <button class="theme-toggle" id="theme-toggle-desktop" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
     <main class="privacy-container">
         <header class="privacy-header">
             <h1>Privacy Policy</h1>
             <p>Last updated: July 7, 2025</p>
         </header>
         
-        <section class="policy-section" style="animation-delay: 0.2s">
+        <section class="policy-section">
             <h2>Information Collection</h2>
             <p>We collect information when you use our website, including:</p>
             <ul>
@@ -232,7 +212,7 @@
             </ul>
         </section>
         
-        <section class="policy-section" style="animation-delay: 0.4s">
+        <section class="policy-section">
             <h2>Use of Information</h2>
             <p>Your information is used to:</p>
             <ul>
@@ -243,7 +223,7 @@
             </ul>
         </section>
         
-        <section class="policy-section" style="animation-delay: 0.6s">
+        <section class="policy-section">
             <h2>Data Sharing</h2>
             <p>We do not sell your personal information. We may share data with:</p>
             <ul>
@@ -253,7 +233,7 @@
             </ul>
         </section>
         
-        <section class="policy-section" style="animation-delay: 0.8s">
+        <section class="policy-section">
             <h2>Cookies and Tracking</h2>
             <p>We use cookies to:</p>
             <ul>
@@ -264,7 +244,7 @@
             <p>You can control cookies through your browser settings.</p>
         </section>
         
-        <section class="policy-section" style="animation-delay: 1s">
+        <section class="policy-section">
             <h2>Data Security</h2>
             <p>We implement security measures to protect your information, including:</p>
             <ul>
@@ -275,7 +255,7 @@
             <p>However, no online transmission is 100% secure.</p>
         </section>
         
-        <section class="policy-section" style="animation-delay: 1.2s">
+        <section class="policy-section">
             <h2>Your Rights</h2>
             <p>You have the right to:</p>
             <ul>
@@ -286,37 +266,87 @@
             </ul>
         </section>
         
-        <section class="policy-section" style="animation-delay: 1.4s">
+        <section class="policy-section">
             <h2>Policy Changes</h2>
             <p>We may update this policy periodically. Significant changes will be notified through our website or email.</p>
             <p>Your continued use after changes constitutes acceptance.</p>
         </section>
         
-        <div class="contact-info" style="animation-delay: 1.6s">
+        <div class="contact-info">
             <h3>Contact Us</h3>
-            <p>For privacy-related questions or requests, please contact:</p>
+            <p><a><p>For privacy-related questions or requests, please contact:</p>
+            </a></p>
             <p><a href="mailto:hello@soufianebelgana.me">hello@soufianebelgana.me</a></p>
         </div>
     </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Soufiane Belgana</p>
+                <div class="footer-links">
+                    <a href="sitemap.xml">Sitemap</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" style="display: none;">
+        ↑
+    </button>
+
+    <!-- JavaScript -->
     <script>
-        // Add intersection observer for scroll animations
+        // Mobile menu toggle
         document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.policy-section, .contact-info');
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const navMenu = document.getElementById('nav-menu');
             
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.animationPlayState = 'running';
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            sections.forEach(section => {
-                section.style.animation = 'fadeInUp 0.6s ease ' + section.style.animationDelay + ' forwards paused';
-                observer.observe(section);
+            mobileMenuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
             });
+            
+            // Scroll to top button
+            const scrollToTopBtn = document.getElementById('scroll-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.style.display = 'block';
+                } else {
+                    scrollToTopBtn.style.display = 'none';
+                }
+            });
+            
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Theme switcher
+            const themeToggle = document.getElementById('theme-toggle-desktop') || 
+                              document.getElementById('theme-toggle-mobile');
+            
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    document.body.classList.toggle('dark-theme');
+                    localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+                });
+            }
+            
+            // Check for saved theme preference
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-theme');
+            }
         });
     </script>
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
