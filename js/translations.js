@@ -1,5 +1,7 @@
 // Translation system for portfolio website
-window.translations = {
+// window.translations = {
+const translations = {
+
     en: {
         // Navigation
         "nav-home": "Home",
