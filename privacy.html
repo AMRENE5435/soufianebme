@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Soufiane Belgana</title>
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --dark: #1f2937;
+            --light: #f9fafb;
+            --gray: #6b7280;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        .privacy-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .privacy-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+        
+        .privacy-header p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .policy-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .policy-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .policy-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .policy-section h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+        
+        .policy-section p, .policy-section ul {
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .policy-section ul {
+            padding-left: 1.5rem;
+        }
+        
+        .policy-section li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        
+        .policy-section li::before {
+            content: '•';
+            color: var(--primary);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+            animation: pulse 6s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.01);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            transition: border-color 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            border-color: white;
+        }
+        
+        /* Animated background elements */
+        .bg-shape {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: rgba(67, 97, 238, 0.1);
+            z-index: -1;
+        }
+        
+        .shape-1 {
+            top: -50px;
+            left: -50px;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .shape-2 {
+            bottom: 100px;
+            right: -50px;
+            width: 300px;
+            height: 300px;
+            animation: float 10s ease-in-out infinite 2s;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .privacy-container {
+                padding: 2rem 1rem;
+            }
+            
+            .policy-section {
+                padding: 1.5rem;
+            }
+            
+            .privacy-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    
+    <main class="privacy-container">
+        <header class="privacy-header">
+            <h1>Privacy Policy</h1>
+            <p>Last updated: July 7, 2025</p>
+        </header>
+        
+        <section class="policy-section" style="animation-delay: 0.2s">
+            <h2>Information Collection</h2>
+            <p>We collect information when you use our website, including:</p>
+            <ul>
+                <li>Personal information you provide (name, email, etc.)</li>
+                <li>Usage data through cookies and analytics</li>
+                <li>Information from third-party services</li>
+            </ul>
+        </section>
+        
+        <section class="policy-section" style="animation-delay: 0.4s">
+            <h2>Use of Information</h2>
+            <p>Your information is used to:</p>
+            <ul>
+                <li>Provide and improve our services</li>
+                <li>Communicate with you</li>
+                <li>Analyze website usage</li>
+                <li>Prevent fraud and ensure security</li>
+            </ul>
+        </section>
+        
+        <section class="policy-section" style="animation-delay: 0.6s">
+            <h2>Data Sharing</h2>
+            <p>We do not sell your personal information. We may share data with:</p>
+            <ul>
+                <li>Service providers who assist our operations</li>
+                <li>Legal authorities when required by law</li>
+                <li>Business partners with your consent</li>
+            </ul>
+        </section>
+        
+        <section class="policy-section" style="animation-delay: 0.8s">
+            <h2>Cookies and Tracking</h2>
+            <p>We use cookies to:</p>
+            <ul>
+                <li>Remember your preferences</li>
+                <li>Analyze site traffic</li>
+                <li>Improve user experience</li>
+            </ul>
+            <p>You can control cookies through your browser settings.</p>
+        </section>
+        
+        <section class="policy-section" style="animation-delay: 1s">
+            <h2>Data Security</h2>
+            <p>We implement security measures to protect your information, including:</p>
+            <ul>
+                <li>Encryption technologies</li>
+                <li>Secure servers</li>
+                <li>Regular security audits</li>
+            </ul>
+            <p>However, no online transmission is 100% secure.</p>
+        </section>
+        
+        <section class="policy-section" style="animation-delay: 1.2s">
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Request correction or deletion</li>
+                <li>Opt-out of marketing communications</li>
+                <li>Withdraw consent</li>
+            </ul>
+        </section>
+        
+        <section class="policy-section" style="animation-delay: 1.4s">
+            <h2>Policy Changes</h2>
+            <p>We may update this policy periodically. Significant changes will be notified through our website or email.</p>
+            <p>Your continued use after changes constitutes acceptance.</p>
+        </section>
+        
+        <div class="contact-info" style="animation-delay: 1.6s">
+            <h3>Contact Us</h3>
+            <p>For privacy-related questions or requests, please contact:</p>
+            <p><a href="mailto:hello@soufianebelgana.me">hello@soufianebelgana.me</a></p>
+        </div>
+    </main>
+
+    <script>
+        // Add intersection observer for scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.policy-section, .contact-info');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                section.style.animation = 'fadeInUp 0.6s ease ' + section.style.animationDelay + ' forwards paused';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
