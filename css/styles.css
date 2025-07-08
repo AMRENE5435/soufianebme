@@ -1852,3 +1852,44 @@ section {
 .features-grid.active .feature-card:nth-child(4) { animation-delay: 0.4s; }
 .features-grid.active .feature-card:nth-child(5) { animation-delay: 0.5s; }
 
+/* Project Links Fix */
+.project-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .project-card {
+    position: relative;
+  }
+  
+  /* Mobile-specific fixes */
+  @media (max-width: 768px) {
+    .project-link::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+    
+    .projects-grid {
+      gap: 1.5rem;
+    }
+    
+    .project-card {
+      min-height: 300px;
+    }
+  }
+  
+  /* Ensure no other elements are blocking */
+  .navbar {
+    z-index: 1000;
+  }
+  
+  .project-card {
+    z-index: 1;
+  }
