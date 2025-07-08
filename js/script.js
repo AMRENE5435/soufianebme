@@ -620,15 +620,5 @@ function preloadResources() {
     });
 }
 
-document.querySelectorAll('.project-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-      // Allow default behavior (navigation)
-      // Only prevent if it's not the main link being clicked
-      if (!e.target.closest('.project-link')) {
-        e.preventDefault();
-      }
-    });
-  });
-  
 // Initialize preloading
 window.addEventListener('load', preloadResources);
