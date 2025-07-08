@@ -1,6 +1,6 @@
 // Translation system for portfolio website
-// window.translations = {
-const translations = {
+   window.translations = {
+// const translations = {
 
     en: {
         // Navigation
