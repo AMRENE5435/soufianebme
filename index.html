@@ -1,414 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title data-translate="page-title">Soufiane Belgana | Full-Stack Developer & Digital Entrepreneur</title>
-    <meta name="description" content="Soufiane Belgana is a Full-Stack Developer and Digital Entrepreneur based in Marrakech, Morocco. Specializing in Python, Web3, Blockchain, and Digital Branding solutions. Explore my portfolio for innovative web development and digital marketing projects.">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title data-translate="page-title">
+      Soufiane Belgana | Full-Stack Developer & Digital Entrepreneur
+    </title>
+    <meta
+      name="description"
+      content="Soufiane Belgana is a Full-Stack Developer and Digital Entrepreneur based in Marrakech, Morocco. Specializing in Python, Web3, Blockchain, and Digital Branding solutions. Explore my portfolio for innovative web development and digital marketing projects."
+    />
+
     <!-- Preload critical resources -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" as="style">
-    <link rel="preload" href="css/styles.css" as="style">
-    
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+      as="style"
+    />
+    <link rel="preload" href="css/styles.css" as="style" />
+
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap">
-    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+    />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    
+    <link rel="stylesheet" href="css/styles.css" />
+
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets\images\logo.jpg">
-    
+    <link rel="icon" type="image/x-icon" href="assets\images\logo.jpg" />
+
     <!-- iOS meta tags -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="canonical" href="https://www.soufianebelgana.me/">
-    <link rel="canonical" href="https://www.soufianebelgana.me/">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="canonical" href="https://www.soufianebelgana.me/" />
+    <link rel="canonical" href="https://www.soufianebelgana.me/" />
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K7CD69H9');</script>
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-K7CD69H9')
+    </script>
     <!-- End Google Tag Manager -->
-</head>
-<body>
+  </head>
+  <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7CD69H9"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-K7CD69H9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home" class="nav-logo">
-                    <img src="assets\images\logo.svg" alt="SB Logo" width="40" height="40">
-                  </a>
-            </div>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <!-- Navigation Menu -->
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" data-translate="nav-home">Home</a></li>
-                <li><a href="#about" data-translate="nav-about">About</a></li>
-                <li><a href="#experience" data-translate="nav-experience">Experience</a></li>
-                <li><a href="#services" data-translate="nav-services">Services</a></li>
-                <li><a href="#projects" data-translate="nav-projects">Projects</a></li>
-                <li><a href="#contact" data-translate="nav-contact">Contact</a></li>
-                <li><a href="privacy.html" data-translate="nav-privacy">Privacy</a></li>
-                <li class="mobile-only">
-                    <!-- Language Switcher for Mobile -->
-                    <select id="language-select-mobile" aria-label="Select Language" class="mobile-language-select">
-                        <option value="en">English</option>
-                        <option value="ar">العربية</option>
-                        <option value="de">Deutsch</option>
-                        <option value="zh">中文</option>
-                        <option value="fr">Français</option>
-                    </select>
-                </li>
-                <li class="mobile-only">
-                    <!-- Theme Toggle for Mobile -->
-                    <button class="theme-toggle mobile-theme-toggle" id="theme-toggle-mobile" aria-label="Toggle dark mode">
-                        <span class="theme-icon">🌙</span> <span data-translate="toggle-theme">Toggle Theme</span>
-                    </button>
-                </li>
-            </ul>
-            
-            <!-- Desktop controls -->
-            <div class="desktop-controls">
-                <div class="language-switcher">
-                    <select id="language-select-desktop" aria-label="Select Language">
-                        <option value="en">English</option>
-                        <option value="ar">العربية</option>
-                        <option value="de">Deutsch</option>
-                        <option value="zh">中文</option>
-                        <option value="fr">Français</option>
-                    </select>
-                </div>
-                <button class="theme-toggle" id="theme-toggle-desktop" aria-label="Toggle dark mode">
-                    <span class="theme-icon">🌙</span>
-                </button>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home" class="nav-logo">
+            <img
+              src="assets\images\logo.svg"
+              alt="SB Logo"
+              width="40"
+              height="40"
+            />
+          </a>
         </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          class="mobile-menu-toggle"
+          id="mobile-menu-toggle"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" data-translate="nav-home">Home</a></li>
+          <li><a href="#about" data-translate="nav-about">About</a></li>
+          <li>
+            <a href="#experience" data-translate="nav-experience">Experience</a>
+          </li>
+          <li>
+            <a href="#services" data-translate="nav-services">Services</a>
+          </li>
+          <li>
+            <a href="#projects" data-translate="nav-projects">Projects</a>
+          </li>
+          <li><a href="#contact" data-translate="nav-contact">Contact</a></li>
+          <li>
+            <a href="privacy.html" data-translate="nav-privacy">Privacy</a>
+          </li>
+          <li class="mobile-only">
+            <!-- Language Switcher for Mobile -->
+            <select
+              id="language-select-mobile"
+              aria-label="Select Language"
+              class="mobile-language-select"
+            >
+              <option value="en">English</option>
+              <option value="ar">العربية</option>
+              <option value="de">Deutsch</option>
+              <option value="zh">中文</option>
+              <option value="fr">Français</option>
+            </select>
+          </li>
+          <li class="mobile-only">
+            <!-- Theme Toggle for Mobile -->
+            <button
+              class="theme-toggle mobile-theme-toggle"
+              id="theme-toggle-mobile"
+              aria-label="Toggle dark mode"
+            >
+              <span class="theme-icon">🌙</span>
+              <span data-translate="toggle-theme">Toggle Theme</span>
+            </button>
+          </li>
+        </ul>
+
+        <!-- Desktop controls -->
+        <div class="desktop-controls">
+          <div class="language-switcher">
+            <select id="language-select-desktop" aria-label="Select Language">
+              <option value="en">English</option>
+              <option value="ar">العربية</option>
+              <option value="de">Deutsch</option>
+              <option value="zh">中文</option>
+              <option value="fr">Français</option>
+            </select>
+          </div>
+          <button
+            class="theme-toggle"
+            id="theme-toggle-desktop"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
+      </div>
     </nav>
 
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <!-- <h1 class="hero-name reveal" data-translate="hero-name"> -->
-                <h1 class="hero-name reveal" data-translate="hero-name reveal">
-                  <span class="line-1">Let’s build something</span><br>
-                  <span class="line-2"> amazing together</span>
-            </h1>
+      <div class="hero-container">
+        <div class="hero-content">
+          <!-- <h1 class="hero-name reveal" data-translate="hero-name"> -->
+          <h1 class="hero-name reveal" data-translate="hero-name reveal">
+            <span class="line-1">Let’s build something</span><br />
+            <span class="line-2"> amazing together</span>
+          </h1>
 
-            <p class="hero-tagline reveal" data-translate="hero-tagline">Full-Stack Developer | Digital Entrepreneur</p>
-            <p class="hero-location reveal" data-translate="hero-location">Based in Marrakech, Morocco</p>
-            <div class="hero-buttons reveal">
-              <a href="#projects" class="cta-button" data-translate="hero-cta">View My Work</a>
-              <a href="#contact" class="cta-button secondary" data-translate="hero-contact">Contact Me</a>
-            </div>
-            </div>
-            <!-- <div class="hero-scroll-indicator">
+          <p class="hero-tagline reveal" data-translate="hero-tagline">
+            Full-Stack Developer | Digital Entrepreneur
+          </p>
+          <p class="hero-location reveal" data-translate="hero-location">
+            Based in Marrakech, Morocco
+          </p>
+          <div class="hero-buttons reveal">
+            <a href="#projects" class="cta-button" data-translate="hero-cta"
+              >View My Work</a
+            >
+            <a
+              href="#contact"
+              class="cta-button secondary"
+              data-translate="hero-contact"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+        <!-- <div class="hero-scroll-indicator">
                 <span data-translate="scroll-down">Scroll Down</span>
                 <div class="scroll-arrow"></div>
             </div> -->
-        </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title reveal" data-translate="about-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image reveal career-animation">
-                    <img 
-                      src="assets/images/photo.jpg" 
-                      alt="Soufiane Belgana" 
-                      width="300" 
-                      height="300" 
-                      loading="lazy"
-                    >
-                </div>
-                <div class="about-text reveal skills-animation">
-                    <p class="about-bio" data-translate="about-bio">
-                        I'm Soufiane Belgana, born in Ouarzazate, now based in Marrakech. Python developer with background in Economic Science (Master's degree). Co-founder of Digital Afous SARL.
-                    </p>
-                    <div class="about-highlights">
-                        <h3 data-translate="key-highlights">Key Highlights</h3>
-                        <ul class="highlights-list">
-                            <li data-translate="highlight-1">social media strategist and manager</li>
-                            <li data-translate="highlight-2">Web3/Blockchain Developer</li>
-                            <li data-translate="highlight-3">Digital Branding Specialist</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title reveal" data-translate="about-title">
+          About Me
+        </h2>
+        <div class="about-content">
+          <div class="about-image reveal career-animation">
+            <img
+              src="assets/images/photo.jpg"
+              alt="Soufiane Belgana"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text reveal skills-animation">
+            <p class="about-bio" data-translate="about-bio">
+              I'm Soufiane Belgana, born in Ouarzazate, now based in Marrakech.
+              Python developer with background in Economic Science (Master's
+              degree). Co-founder of Digital Afous SARL.
+            </p>
+            <div class="about-highlights">
+              <h3 data-translate="key-highlights">Key Highlights</h3>
+              <ul class="highlights-list">
+                <li data-translate="highlight-1">
+                  social media strategist and manager
+                </li>
+                <li data-translate="highlight-2">Web3/Blockchain Developer</li>
+                <li data-translate="highlight-3">
+                  Digital Branding Specialist
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Experience Timeline -->
     <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title reveal" data-translate="experience-title">Experience Timeline</h2>
-            <div class="timeline">
-                <div class="timeline-item reveal scale-animation">
-                    <div class="timeline-year">2015</div>
-                    <div class="timeline-content">
-                        <h3 data-translate="exp-2015-title">Photography Service Head</h3>
-                        <p data-translate="exp-2015-company">Mazagan El Jadida</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal scale-animation">
-                    <div class="timeline-year">2017</div>
-                    <div class="timeline-content">
-                        <h3 data-translate="exp-2017-title">Telemarketer</h3>
-                        <p data-translate="exp-2017-company">Falfa Gatell</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal scale-animation">
-                    <div class="timeline-year">2019</div>
-                    <div class="timeline-content">
-                        <h3 data-translate="exp-2019-title">Web Developer</h3>
-                        <p data-translate="exp-2019-company">Doga Koleji (Istanbul)</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal scale-animation">
-                    <div class="timeline-year">2020</div>
-                    <div class="timeline-content">
-                        <h3 data-translate="exp-2020-title">Freelance Full-Stack Developer</h3>
-                        <p data-translate="exp-2020-status">Present</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal scale-animation">
-                    <div class="timeline-year">2021</div>
-                    <div class="timeline-content">
-                        <h3 data-translate="exp-2021-title">Co-founder</h3>
-                        <p data-translate="exp-2021-company">Digital Afous SARL</p>
-                        <p data-translate="exp-2021-status">Present</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title reveal" data-translate="experience-title">
+          Experience Timeline
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item reveal scale-animation">
+            <div class="timeline-year">2015</div>
+            <div class="timeline-content">
+              <h3 data-translate="exp-2015-title">Photography Service Head</h3>
+              <p data-translate="exp-2015-company">Mazagan El Jadida</p>
             </div>
+          </div>
+          <div class="timeline-item reveal scale-animation">
+            <div class="timeline-year">2017</div>
+            <div class="timeline-content">
+              <h3 data-translate="exp-2017-title">Telemarketer</h3>
+              <p data-translate="exp-2017-company">Falfa Gatell</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal scale-animation">
+            <div class="timeline-year">2019</div>
+            <div class="timeline-content">
+              <h3 data-translate="exp-2019-title">Web Developer</h3>
+              <p data-translate="exp-2019-company">Doga Koleji (Istanbul)</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal scale-animation">
+            <div class="timeline-year">2020</div>
+            <div class="timeline-content">
+              <h3 data-translate="exp-2020-title">
+                Freelance Full-Stack Developer
+              </h3>
+              <p data-translate="exp-2020-status">Present</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal scale-animation">
+            <div class="timeline-year">2021</div>
+            <div class="timeline-content">
+              <h3 data-translate="exp-2021-title">Co-founder</h3>
+              <p data-translate="exp-2021-company">Digital Afous SARL</p>
+              <p data-translate="exp-2021-status">Present</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title reveal" data-translate="services-title">Services</h2>
-            <div class="services-grid">
-                <div class="service-card reveal scale-animation">
-                    <div class="service-icon">🌐💻</div>
-                    <h3 data-translate="service-1-title">Website Development</h3>
-                    <p data-translate="service-1-desc">Custom websites built with modern technologies and optimized for performance.</p>
-                </div>
-                <div class="service-card reveal scale-animation">
-                    <div class="service-icon">📱</div>
-                    <h3 data-translate="service-2-title">Mobile App Development</h3>
-                    <p data-translate="service-2-desc">Cross-platform mobile applications for iOS and Android.</p>
-                </div>
-                <div class="service-card reveal scale-animation">
-                    <div class="service-icon">⛓️🎯</div>
-                    <h3 data-translate="service-3-title">Web3/Blockchain</h3>
-                    <p data-translate="service-3-desc">Decentralized applications and blockchain integration.</p>
-                </div>
-                <div class="service-card reveal scale-animation">
-                    <div class="service-icon">🎬</div>
-                    <h3 data-translate="service-4-title">Digital Branding</h3>
-                    <p data-translate="service-4-desc">Complete brand identity design and strategies.</p>
-                </div>
-                <div class="service-card reveal scale-animation">
-                    <div class="service-icon">✍️🎥</div>
-                    <h3 data-translate="service-5-title">Content Creation</h3>
-                    <p data-translate="service-5-desc">Engaging content for websites and social media.</p>
-                </div>
-                <div class="service-card reveal scale-animation">
-                    <div class="service-icon">💸💲</div>
-                    <h3 data-translate="service-6-title">E-commerce</h3>
-                    <p data-translate="service-6-desc">Online store development and integration.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title reveal" data-translate="services-title">
+          Services
+        </h2>
+        <div class="services-grid">
+          <div class="service-card reveal scale-animation">
+            <div class="service-icon">🌐💻</div>
+            <h3 data-translate="service-1-title">Website Development</h3>
+            <p data-translate="service-1-desc">
+              Custom websites built with modern technologies and optimized for
+              performance.
+            </p>
+          </div>
+          <div class="service-card reveal scale-animation">
+            <div class="service-icon">📱</div>
+            <h3 data-translate="service-2-title">Mobile App Development</h3>
+            <p data-translate="service-2-desc">
+              Cross-platform mobile applications for iOS and Android.
+            </p>
+          </div>
+          <div class="service-card reveal scale-animation">
+            <div class="service-icon">⛓️🎯</div>
+            <h3 data-translate="service-3-title">Web3/Blockchain</h3>
+            <p data-translate="service-3-desc">
+              Decentralized applications and blockchain integration.
+            </p>
+          </div>
+          <div class="service-card reveal scale-animation">
+            <div class="service-icon">🎬</div>
+            <h3 data-translate="service-4-title">Digital Branding</h3>
+            <p data-translate="service-4-desc">
+              Complete brand identity design and strategies.
+            </p>
+          </div>
+          <div class="service-card reveal scale-animation">
+            <div class="service-icon">✍️🎥</div>
+            <h3 data-translate="service-5-title">Content Creation</h3>
+            <p data-translate="service-5-desc">
+              Engaging content for websites and social media.
+            </p>
+          </div>
+          <div class="service-card reveal scale-animation">
+            <div class="service-icon">💸💲</div>
+            <h3 data-translate="service-6-title">E-commerce</h3>
+            <p data-translate="service-6-desc">
+              Online store development and integration.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Showcase -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title reveal" data-translate="projects-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card reveal career-animation">
-                    <div class="project-image">
-                        <img 
-                          src="assets/images/afous.jpg" 
-                          alt="Digital Afous SARL" 
-                          loading="lazy"
-                        >
-                    </div>
-                    <div class="project-content">
-                        <h3 data-translate="project-1-title">Digital Afous SARL</h3>
-                        <p data-translate="project-1-desc">Co-founded digital agency specializing in web development and digital marketing solutions.</p>
-                        <div class="project-tags">
-                            <span class="tag">Business</span>
-                            <span class="tag">Agency</span>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section-title reveal" data-translate="projects-title">
+          Projects
+        </h2>
+        <div class="projects-grid">
+          <a href="https://www.instagram.com/espace.afous" target="_blank" class="project-link">
+            <div class="project-card reveal career-animation">
+              <div class="project-image">
+                <img
+                  src="assets/images/afous.jpg"
+                  alt="Digital Afous SARL"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-content">
+                <h3 data-translate="project-1-title">Digital Afous SARL</h3>
+                <p data-translate="project-1-desc">
+                  Co-founded digital agency specializing in web development and
+                  digital marketing solutions.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Business</span>
+                  <span class="tag">Agency</span>
                 </div>
-                <div class="project-card reveal skills-animation">
-                    <div class="project-image">
-                        <img 
-                          src="assets/images/LAPTOPSOLUTION.jpg" 
-                          alt="E-commerce Websites" 
-                          loading="lazy"
-                        >
-                    </div>
-                    <div class="project-content">
-                        <h3 data-translate="project-2-title">E-commerce Websites</h3>
-                        <p data-translate="project-2-desc">Two specialized e-commerce platforms for artisanal products with custom features.</p>
-                        <div class="project-tags">
-                            <span class="tag">E-commerce</span>
-                            <span class="tag">Artisanal</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card reveal scale-animation">
-                    <div class="project-image">
-                        <img 
-                          src="assets/images/stores.jpg" 
-                          alt="Marketplace Stores" 
-                          loading="lazy"
-                        >
-                    </div>
-                    <div class="project-content">
-                        <h3 data-translate="project-3-title">Marketplace Stores</h3>
-                        <p data-translate="project-3-desc">Successfully established and managed stores on Etsy and Amazon marketplaces.</p>
-                        <div class="project-tags">
-                            <span class="tag">Marketplace</span>
-                            <span class="tag">Etsy</span>
-                            <span class="tag">Amazon</span>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </a>
+          <a href="https://www.laptopsolution.tech" target="_blank" class="project-link">
+            <div class="project-card reveal skills-animation">
+              <div class="project-image">
+                <img
+                  src="assets/images/LAPTOPSOLUTION.jpg"
+                  alt="E-commerce Websites"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-content">
+                <h3 data-translate="project-2-title">E-commerce Websites</h3>
+                <p data-translate="project-2-desc">
+                  Two specialized e-commerce platforms for artisanal products
+                  with custom features.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">E-commerce</span>
+                  <span class="tag">Artisanal</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://ma.bazariste.shop" target="_blank" class="project-link">
+            <div class="project-card reveal scale-animation">
+              <div class="project-image">
+                <img
+                  src="assets/images/stores.jpg"
+                  alt="Marketplace Stores"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-content">
+                <h3 data-translate="project-3-title">Marketplace Stores</h3>
+                <p data-translate="project-3-desc">
+                  Successfully established and managed stores on Etsy and Amazon
+                  marketplaces.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Marketplace</span>
+                  <span class="tag">Etsy</span>
+                  <span class="tag">Amazon</span>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- Why Choose Me -->
     <section id="why-choose" class="why-choose">
-        <div class="container">
-            <h2 class="section-title reveal" data-translate="why-choose-title">Why Choose Me</h2>
-            <div class="features-grid">
-                <div class="feature-card reveal scale-animation">
-                    <div class="feature-icon">💰</div>
-                    <h3 data-translate="feature-1-title">Competitive Pricing</h3>
-                    <p data-translate="feature-1-desc">Fair and transparent pricing for all project types.</p>
-                </div>
-                <div class="feature-card reveal scale-animation">
-                    <div class="feature-icon">⚡</div>
-                    <h3 data-translate="feature-2-title">Quality/Price Ratio</h3>
-                    <p data-translate="feature-2-desc">Exceptional value with premium quality deliverables.</p>
-                </div>
-                <div class="feature-card reveal scale-animation">
-                    <div class="feature-icon">🚀</div>
-                    <h3 data-translate="feature-3-title">Fast Delivery</h3>
-                    <p data-translate="feature-3-desc">Quick turnaround without compromising quality.</p>
-                </div>
-                <div class="feature-card reveal scale-animation">
-                    <div class="feature-icon">🎯</div>
-                    <h3 data-translate="feature-4-title">Professional Experience</h3>
-                    <p data-translate="feature-4-desc">Years of experience in diverse technology projects.</p>
-                </div>
-                <div class="feature-card reveal scale-animation">
-                    <div class="feature-icon">🔒</div>
-                    <h3 data-translate="feature-5-title">Confidential Service</h3>
-                    <p data-translate="feature-5-desc">Complete confidentiality and secure handling.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title reveal" data-translate="why-choose-title">
+          Why Choose Me
+        </h2>
+        <div class="features-grid">
+          <div class="feature-card reveal scale-animation">
+            <div class="feature-icon">💰</div>
+            <h3 data-translate="feature-1-title">Competitive Pricing</h3>
+            <p data-translate="feature-1-desc">
+              Fair and transparent pricing for all project types.
+            </p>
+          </div>
+          <div class="feature-card reveal scale-animation">
+            <div class="feature-icon">⚡</div>
+            <h3 data-translate="feature-2-title">Quality/Price Ratio</h3>
+            <p data-translate="feature-2-desc">
+              Exceptional value with premium quality deliverables.
+            </p>
+          </div>
+          <div class="feature-card reveal scale-animation">
+            <div class="feature-icon">🚀</div>
+            <h3 data-translate="feature-3-title">Fast Delivery</h3>
+            <p data-translate="feature-3-desc">
+              Quick turnaround without compromising quality.
+            </p>
+          </div>
+          <div class="feature-card reveal scale-animation">
+            <div class="feature-icon">🎯</div>
+            <h3 data-translate="feature-4-title">Professional Experience</h3>
+            <p data-translate="feature-4-desc">
+              Years of experience in diverse technology projects.
+            </p>
+          </div>
+          <div class="feature-card reveal scale-animation">
+            <div class="feature-icon">🔒</div>
+            <h3 data-translate="feature-5-title">Confidential Service</h3>
+            <p data-translate="feature-5-desc">
+              Complete confidentiality and secure handling.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title reveal" data-translate="contact-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info reveal career-animation">
-                    <h3 data-translate="contact-info-title">Let's Work Together</h3>
-                    <p data-translate="contact-pricing">Price varies by project scope - Contact for consultation</p>
-                    <div class="contact-methods">
-                        <h4 data-translate="meeting-options">Meeting Options:</h4>
-                        <ul>
-                            <li data-translate="meeting-face">Face-to-face (Marrakech)</li>
-                            <li data-translate="meeting-online">Online</li>
-                        </ul>
-                    </div>
-                    <div class="social-links">
-                        <a href="http://wa.me/16017810046" aria-label="WhatsApp" class="social-link">
-                          <span class="social-icon">📱</span> 
-                          <span class="social-text">WhatsApp</span>
-                        </a>
-                        <a href="callto:+212708040530" aria-label="Mobile" class="social-link">
-                          <span class="social-icon">📞</span> 
-                          <span class="social-text">Call</span>
-                        </a>
-                        <a href="mailto:sbelgana@gmail.com" aria-label="Email" class="social-link">
-                          <span class="social-icon">📧</span> 
-                          <span class="social-text">Email</span>
-                        </a>
-                        <a href="https://maps.app.goo.gl/R2JbxnGuc2s9wifF8" aria-label="Address" class="social-link">
-                          <span class="social-icon">📍</span> 
-                          <span class="social-text">Location</span>
-                        </a>
-                      </div>
-                </div>
-                <form class="contact-form reveal skills-animation" id="contact-form">
-                    <div class="form-group">
-                        <label for="name" data-translate="form-name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" data-translate="form-email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject" data-translate="form-subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" data-translate="form-message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button" data-translate="form-submit">Send Message</button>
-                </form>
+      <div class="container">
+        <h2 class="section-title reveal" data-translate="contact-title">
+          Get In Touch
+        </h2>
+        <div class="contact-content">
+          <div class="contact-info reveal career-animation">
+            <h3 data-translate="contact-info-title">Let's Work Together</h3>
+            <p data-translate="contact-pricing">
+              Price varies by project scope - Contact for consultation
+            </p>
+            <div class="contact-methods">
+              <h4 data-translate="meeting-options">Meeting Options:</h4>
+              <ul>
+                <li data-translate="meeting-face">Face-to-face (Marrakech)</li>
+                <li data-translate="meeting-online">Online</li>
+              </ul>
             </div>
+            <div class="social-links">
+              <a
+                href="http://wa.me/16017810046"
+                aria-label="WhatsApp"
+                class="social-link"
+              >
+                <span class="social-icon">📱</span>
+                <span class="social-text">WhatsApp</span>
+              </a>
+              <a
+                href="callto:+212708040530"
+                aria-label="Mobile"
+                class="social-link"
+              >
+                <span class="social-icon">📞</span>
+                <span class="social-text">Call</span>
+              </a>
+              <a
+                href="mailto:sbelgana@gmail.com"
+                aria-label="Email"
+                class="social-link"
+              >
+                <span class="social-icon">📧</span>
+                <span class="social-text">Email</span>
+              </a>
+              <a
+                href="https://maps.app.goo.gl/R2JbxnGuc2s9wifF8"
+                aria-label="Address"
+                class="social-link"
+              >
+                <span class="social-icon">📍</span>
+                <span class="social-text">Location</span>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal skills-animation" id="contact-form">
+            <div class="form-group">
+              <label for="name" data-translate="form-name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email" data-translate="form-email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject" data-translate="form-subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message" data-translate="form-message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="submit-button"
+              data-translate="form-submit"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p data-translate="footer-copyright">&copy; 2025 Soufiane Belgana</p>
-                <div class="footer-links">
-                    <a href="/sitemap.xml" data-translate="sitemap-link">Sitemap</a>
-                    <a href="/privacy.html" data-translate="footer-privacy">Privacy</a>
-                    <a href="/terms.html" data-translate="footer-terms">Terms</a>
-                    <!-- <span data-translate="footer-company">Digital Afous SARL</span> -->
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <p data-translate="footer-copyright">&copy; 2025 Soufiane Belgana</p>
+          <div class="footer-links">
+            <a href="/sitemap.xml" data-translate="sitemap-link">Sitemap</a>
+            <a href="/privacy.html" data-translate="footer-privacy">Privacy</a>
+            <a href="/terms.html" data-translate="footer-terms">Terms</a>
+            <!-- <span data-translate="footer-company">Digital Afous SARL</span> -->
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" style="display: none;">
-        ↑
+    <button
+      id="scroll-to-top"
+      class="scroll-to-top"
+      aria-label="Scroll to top"
+      style="display: none"
+    >
+      ↑
     </button>
 
     <!-- JavaScript -->
     <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
