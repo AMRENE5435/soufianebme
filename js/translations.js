@@ -52,7 +52,7 @@
         
         // About section
         'about-title': 'About Me',
-        'about-bio': 'Born in Ouarzazate, now based in Marrakech. Python developer with background in Economic Science (Master\'s degree). Co-founder of Digital Afous SARL.',
+        'about-bio': 'I’m Soufiane Belgana, Born in Ouarzazate, now based in Marrakech. Python developer with background in Economic Science (Master\'s degree). Co-founder of Digital Afous SARL.',
         'key-highlights': 'Key Highlights',
         'highlight-1': 'Social Media Strategist and Manager',
         'highlight-2': 'Web3/Blockchain Developer',
@@ -183,7 +183,7 @@
         
         // About section
         'about-title': 'نبذة عني',
-        'about-bio': 'ولدت في ورزازات، أقيم حالياً في مراكش. مطور بايثون مع خلفية في العلوم الاقتصادية (درجة الماجستير). شريك مؤسس في شركة Digital Afous SARL.',
+        'about-bio': 'انا سفيان بلكانى, ولدت في ورزازات، أقيم حالياً في مراكش. مطور بايثون مع خلفية في العلوم الاقتصادية (درجة الماجستير). شريك مؤسس في شركة Digital Afous SARL.',
         'key-highlights': 'النقاط المميزة',
         'highlight-1': 'ستراتيجي ومدير وسائل التواصل الاجتماعي',
         'highlight-2': 'مطور Web3/Blockchain',
@@ -313,7 +313,7 @@
         
         // About section
         'about-title': 'Über mich',
-        'about-bio': 'Geboren in Ouarzazate, jetzt ansässig in Marrakesch. Python-Entwickler mit Hintergrund in Wirtschaftswissenschaften (Master-Abschluss). Mitgründer von Digital Afous SARL.',
+        'about-bio': 'Ich bin Soufiane Belghana, Geboren in Ouarzazate, jetzt ansässig in Marrakesch. Python-Entwickler mit Hintergrund in Wirtschaftswissenschaften (Master-Abschluss). Mitgründer von Digital Afous SARL.',
         'key-highlights': 'Wichtige Highlights',
         'highlight-1': 'Social-Media-Strategin und Managerin',
         'highlight-2': 'Web3/Blockchain Entwickler',
@@ -443,7 +443,7 @@
         
         // About section
         'about-title': '关于我',
-        'about-bio': '出生于瓦尔扎扎特，现居马拉喀什。Python开发者，拥有经济学背景（硕士学位）。Digital Afous SARL联合创始人。',
+        'about-bio': '我是 Soufiane Belghana，出生于瓦尔扎扎特，现居马拉喀什。Python开发者，拥有经济学背景（硕士学位）。Digital Afous SARL联合创始人。',
         'key-highlights': '主要亮点',
         'highlight-1': '社交媒体策略师和经理<',
         'highlight-2': 'Web3/区块链开发者',
@@ -573,7 +573,7 @@
         
         // About section
         'about-title': 'À propos de moi',
-        'about-bio': 'Né à Ouarzazate, maintenant basé à Marrakech. Développeur Python avec une formation en sciences économiques (diplôme de master). Co-fondateur de Digital Afous SARL.',
+        'about-bio': 'Je suis Soufiane Belgana, Né à Ouarzazate, maintenant basé à Marrakech. Développeur Python avec une formation en sciences économiques (diplôme de master). Co-fondateur de Digital Afous SARL.',
         'key-highlights': 'Points clés',
         'highlight-1': 'Stratège et gestionnaire des médias sociaux',
         'highlight-2': 'Développeur Web3/Blockchain',
